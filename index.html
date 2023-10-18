@@ -14,11 +14,11 @@
         <img src="./assets/img/logo-barbershop-semfundo2.png" alt="Logo">
         <nav>
             <ul>
-                <li><a href="">Quem Somos</a></li>
-                <li><a href="">Serviços</a></li>
-                <li><a href="">Produtos</a></li>
-                <li><a href="">Contato</a></li>
-                <!-- <li><a href="">Depoimentos de nossos Clientes</a></li> -->
+                <li><a href="#aboutUs">Quem Somos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#valores">Preços</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -27,73 +27,109 @@
     </section>
     <main>
         <aside>
-            <h2>Informações Adicionais</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, dolor. Aspernatur officiis voluptate
-                veritatis cupiditate alias eligendi incidunt explicabo minima maiores dolorum? Nulla quae ratione
-                praesentium fuga, temporibus quod ullam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sit quibusdam iure itaque numquam, eos
-                explicabo, exercitationem pariatur labore quod et amet modi voluptatem. Ab blanditiis tempore nesciunt
-                suscipit quidem.</p>
+            <h3>Horário de Atendimento</h3>
+            <ol>                
+                <li>segunda à sexta das 08:00h à 22:00h</li>
+                <li>sábado das 08:00h às 20:00h</li>
+                <li>domingo e feriado, sem atendimento</li>
+            </ol>
+
+            <h3>Endereço</h3>
+            <address>
+                Avenida Celso Garcia, 1234 <br>
+                Tatuapé, São Paulo - SP <br>
+                Cep 01234-567
+            </address>
+
+            <h3>Telefones</h3>
+            <p>(11)2123-4567</p>
+            <p id="pAside">(11)98123-4567</p>
+
+            <h3>E-mail</h3>
+            <p>contato@samplebarbershop.com</p>
         </aside>
-        <section class="produtos">
-            <h1>Serviços em Destaque</h1>
-            <article>
-                <figure>
-                    <img src="./assets/img/cabelo.jpg" alt="">
-                    <figcaption>Cabelo</figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="./assets/img/barba.jpg" alt="">
-                    <figcaption>Barba</figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="./assets/img/cabelo+barba.jpg" alt="">
-                    <figcaption>Cabelo + Barba</figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="./assets/img/cabelo.jpg" alt="">
-                    <figcaption>Cabelo</figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="./assets/img/barba.jpg" alt="">
-                    <figcaption>Barba</figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="./assets/img/cabelo+barba.jpg" alt="">
-                    <figcaption>Cabelo + Barba</figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="./assets/img/cabelo.jpg" alt="">
-                    <figcaption>Cabelo</figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="./assets/img/barba.jpg" alt="">
-                    <figcaption>Barba</figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="./assets/img/cabelo+barba.jpg" alt="">
-                    <figcaption>Cabelo + Barba</figcaption>
-                </figure>
-            </article>
-        </section>
+        <div>
+            <section class="servicos" id="servicos">
+                <h1>Serviços</h1>
+                <article>
+                    <figure>
+                        <img src="./assets/img/cabelo3.jpg" alt="">
+                        <figcaption>Cabelo</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="./assets/img/barba4.jpg" alt="">
+                        <figcaption>Barba</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="./assets/img/escova.jpg" alt="">
+                        <figcaption>Escova</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="./assets/img/sobrancelha.jpg" alt="">
+                        <figcaption>Sobrancelha</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="./assets/img/luzes.jpg" alt="">
+                        <figcaption>Luzes</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="./assets/img/alisamento.jpg" alt="">
+                        <figcaption>Alisamento / Relaxamento</figcaption>
+                    </figure>
+                </article>
+            </section>
+            <section class="produtos" id="produtos">
+                <h1>Produtos</h1>
+                <article>
+                    <figure>
+                        <img src="./assets/img/pomada.jpg" alt="">
+                        <figcaption>Pomada Modeladora</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="./assets/img/shavingGel.jpg" alt="">
+                        <figcaption>Gel para Barbear</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="./assets/img/posBarba.jpg" alt="">
+                        <figcaption>Loção Pós Barba</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="./assets/img/balm.jpg" alt="">
+                        <figcaption>Balm Hidratante</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="./assets/img/minoxidil.jpg" alt="">
+                        <figcaption>Minoxidil</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="./assets/img/oleo.jpg" alt="">
+                        <figcaption>Óleo para Barba</figcaption>
+                    </figure>
+                </article>
+            </section>
+        </div>
     </main>
-    <article>
+    <article id="aboutUs">
         <h2>Sobre nós</h2>
     </article>
     <section id="form">
