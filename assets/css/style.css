@@ -8,11 +8,11 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    /* background-color: aqua; */
 }
 
+/* Header - início */
 header {
-    background-color: black;
+    background-color: #585050;
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
@@ -43,6 +43,7 @@ header li {
 header a {
     padding: 5px;
     color: white;
+    text-decoration: none;
 }
 
 header a:hover {
@@ -51,22 +52,27 @@ header a:hover {
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgb(247, 244, 244);
 }
+/* Header - fim */
 
+/* Banner - início */
 #banner, #banner img {
     width: 100%;
     height: 400px;
 }
-/* Daqui para cima já está bom, por enquanto*/
+/* Banner - início */
 
+/* Main - início */
 main {
     height: auto;
+    background-color: #d1cfcf;
+
 }
 
-main aside, main section {
+main aside, main div section {
     display: inline-block;
     vertical-align: top;
     margin: 5px 30px;
-    height:auto;
+    /* height:auto; */
 }
 
 main aside {
@@ -79,26 +85,41 @@ main aside {
     box-shadow: inset -4px -4px 3px rgba(0, 0, 0, 0.234);
 }
 
-main aside ol, address, .pAside {
+main aside ol, main aside address, main aside .pAside {
     margin-bottom: 30px;
 }
 
-main aside h3 {
+main aside h2 {
     margin-bottom: 10px;
 }
 
-main aside p, main aside ol li {
-    margin: 5px;
+main aside .etica {
+    margin-bottom: 80px;
 }
 
-.phone, .social{
+main aside .etica h2 {
+    text-align: center;
+}
+
+main aside p, main aside li {
+    margin: 5px;
+    line-height: 26px;
+}
+
+main aside .phone, main aside .social{
     display: inline-block;
     vertical-align: middle;
     width: 24px;
 }
 
-a {
+main aside a {
     text-decoration: none;
+    color: inherit;
+}
+
+main aside a:hover {
+    color: #0000ff;
+    font-weight: 600;
 }
 
 main div {
@@ -107,51 +128,136 @@ main div {
     display: inline-block;
 }
 
-main section h1 {
+main div section h1 {
     margin: 20px 0px;
     text-align: left;
     font-size: 2rem;
 }
 
-main section img {
-    width: 100%;
-    filter: blur(2px);
+main div section img {
     border-radius: 50%;
 }
 
-main section img:hover {
-    filter: none;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 255, 0.256);
+main div section:hover :not(:hover) {
+    opacity: 0.7;
+    transition: 1s;
 }
 
-.servicos article, .produtos article {
+main section img:hover {
+    transform: translate(5px, -15px);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 255, 0.256);
+    transition: 1s;
+}
+
+main .servicos article, main .produtos article {
     width: 27%;
     font-size: 1.2rem;
+    font-weight: 500;
     margin: 20px 25px;
     display: inline-block;
 }
 
-figcaption {
-    font-weight: 500;
-}
-
-figcaption:hover {
-    font-weight: bolder;
-    color: blue;
+main section article:hover {
+    font-weight: 700;
+    color: #0000ff;
     cursor:context-menu;
     text-decoration: underline;
 }
+/* Main - fim*/
 
-#aboutUs {
-    background-color: aqua;
+/* Sobre nós - início */
+#quemSomos article{
+    text-align: justify;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    line-height: 32px;
 }
 
+#quemSomos h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+/* Sobre nós - fim */
 
+/* Tabelas de valores - início */
+#tabelas {
+    background-image: url(/assets/img/banner-desfocado.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tabelas h2 {
+    text-align: center;
+    padding: 20px 0px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+#tabelaServicos, #tabelaProdutos{
+    display: inline-block;
+    padding: 5px 40px;
+    margin: 0 auto;
+    width: 49%;
+}
+
+#tabelas table{
+    font-size: 1.3rem;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#tabelas th, #tabelas td{
+    border-radius: 15px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 255, 0.256);
+}
+
+#tabelas tbody tr {
+    color: #f5f4f7;
+    font-weight: bolder;
+    background-color: #58505071;
+}
+
+#tabelas thead tr {
+    color: #f5f4f7;
+    font-weight: bolder;
+    background-color: #201f1f71;
+}
+
+#tabelaServicos tbody tr:hover{
+    transform: translate(15px, 0px);
+}
+
+#tabelaProdutos tbody tr:hover{
+    transform: translate(-15px, 0px);
+}
+
+#tabelaServicos tbody tr:hover, #tabelaProdutos tbody tr:hover{
+    background-color: #ffffff;
+    color: #27108bf8;
+    text-decoration: underline;
+    transition: .2s;
+    border-radius: 15px;
+    cursor: context-menu;
+}
+/* Tabelas de valores - fim */
+
+/* Formulário - início */
+
+/* Formulário - fim */
+
+/* Rodapé - início */
+
+/* Rodapé - fim */
 
 footer {
-    width: 100vw;
     background-color: black;
     color: white;
     text-align: center;
-}
+} 
