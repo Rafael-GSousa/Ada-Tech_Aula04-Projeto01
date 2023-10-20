@@ -14,11 +14,11 @@
         <img src="./assets/img/logo-barbershop-semfundo2.png" alt="Logo">
         <nav>
             <ul>
-                <li><a href="#aboutUs">Quem Somos</a></li>
+                <li><a href="#quemSomos">Quem Somos</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#valores">Preços</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#tabelas">Nossos Preços</a></li>
+                <li><a href="#form">Agendamento Online</a></li>
             </ul>
         </nav>
     </header>
@@ -252,24 +252,24 @@
     </div>
 
     <section id="form">
-        <h2>Fale Conosco</h2>
-        <form action="">
-            <div>
+        <h2>Agendamento Online</h2>
+        <form action="https://localhost:3000/agendamento" method="post" autocomplete="off">
+            <div class="dados">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" placeholder="Digite aqui seu nome">
             </div>
 
-            <div>
+            <div class="dados">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="Digite aqui seu e-mail">
             </div>
 
-            <div>
+            <div class="dados">
                 <label for="celular">Celular</label>
-                <input type="tel" name="celular" id="celular">
+                <input type="tel" name="celular" id="celular" placeholder="Digite aqui seu telefone">
             </div>
-            
-            <div>
+
+            <div class="dados">
                 <label for="dia">Dia da Semana</label>
                 <select name="dia" id="dia">
                     <option value="" disabled selected>Escolha um dia</option>
@@ -281,9 +281,8 @@
                     <option value="">Sábado</option>
                 </select>
             </div>
-            <br>
 
-            <div>
+            <div class="dados">
                 <label for="hora">Horário</label>
                 <select name="hora" id="hora">
                     <option value="" disabled selected>Escolha um horário</option>
@@ -310,16 +309,51 @@
                     </optgroup>
                 </select>
             </div>
-            <div>
-                <label for="msg">Informações Adicionais</label>
-                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            <div id="textarea">
+                <label for="msg">Informações Adicionais | Sugestões | Comentários</label>
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+            </div>
+
+            <div id="btn">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
             </div>
         </form>
     </section>
+
+    <section>
+        <div id="mapaSite">
+            <h3>Mapa do Site</h3>
+            <nav>
+                <ul>
+                    <li><a href="#quemSomos">Quem Somos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#tabelas">Nossos Preços</a></li>
+                    <li><a href="#etica">Missão, Visão e Valores</a></li>
+                    <li><a href="#form">Horários de Atendimento</a></li>
+                    <li><a href="#form">Redes Sociais</a></li>
+                    <li><a href="#form">Nosso Endereço</a></li>
+                    <li><a href="#form">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
     <footer>
-        <p>
-            &copy; Todos os Direitos Reservados
-        </p>
+        <div id="dev">
+            <p>
+                Desenvolvido na força do ódio 😡 por <span id="autor">Rafael Galdino</span>
+                <img src="/assets/img/github-icon.png" alt="" class="social"><a href="https://github.com/Rafael-GSousa" target="_blank">/rafael-gsousa</a>
+                <img src="/assets/img/facebook.png" alt="" class="social"><a href="https://facebook.com/rafaelgs1989" target="_blank">/rafaelgs1989</a>
+                <img src="/assets/img/instagram.png" alt="" class="social"><a href="https://instagram.com/raphael_galdino" target="_blank">/raphael_galdino</a>
+            </p>
+        </div>
+
+        <div id="copy">
+            <p>
+                &copy; Todos os Direitos Reservados
+            </p>
+        </div>
     </footer>
 </body>
 
