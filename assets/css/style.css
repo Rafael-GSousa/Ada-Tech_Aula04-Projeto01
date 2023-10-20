@@ -184,7 +184,7 @@ main section article:hover {
 
 /* Tabelas de valores - início */
 #tabelas {
-    background-image: url(/assets/img/banner-desfocado.png);
+    background-image: url("../img/banner-desfocado.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -383,13 +383,14 @@ section #mapaSite nav {
 }
 section #mapaSite nav ul {
     list-style-type: none;
-    columns: 3;
-    text-align: justify;
+    columns: 2;
     padding: 5px;
+    /* margin: 0 auto; */
 }
 
 section #mapaSite nav ul li {
-    margin: 0px auto 15px auto;
+    margin: 0px auto 20px auto;
+    text-align: center;
 }
 
 section #mapaSite nav a{
@@ -410,45 +411,61 @@ section #mapaSite nav a:hover {
 /* Rodapé - início */
 footer {
     background-color: black;
-    color: white;
+    color: rgb(214, 198, 198);
     text-align: center;
-    padding: 10px 0px 2px 0px;
+
 } 
 
 footer #dev #autor {
-    font-style: italic;
-    color: #0000ff;
+    font-style: bold;
+    font-size: 1.1rem;
+    font-family: cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgba(108, 108, 156, 0.363);
+    color: #191952;
     
 }
 
-footer #dev img {
-    vertical-align: middle;
-    height: 24px;
-    margin-left: 5px;
+/* footer #dev #autor::before {
+    content: "<mark>";    
 }
 
-footer #dev, footer #copy{
-    display: inline-block;
+footer #dev #autor::after {
+    content: '</mark>';    
+} */
+
+footer #dev img {
+    /* background-color: #0000ff; */
+    /* vertical-align: middle; */
+    height: 18px;
+    margin-left: 15px;
+    border-radius: 2px;
+}
+
+footer #dev{
     width: 100%;
-    color: #fff;
+    color: black;
     padding: 5px;
     font-size: 1rem;
-    line-height: 24px;
+    line-height: 12px;
     vertical-align: bottom;
+    background-color: #d1cfcf;
 }
 
 footer #dev a {
     text-decoration: none;
     color: #6b6464b0;
-    vertical-align: middle;
-    padding: 5px;
+    vertical-align: bottom;
+    /* background-color: #0000ff; */
 }
 
-footer #dev a:hover {
-    color: black;
-    background-color: white;
-    font-weight: bolder;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px rgb(247, 244, 244);
+footer #dev p {
+    padding: 10px;
+}
+
+footer #dev img:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 255, 0.74);
+    transform: translate(0px, -5px);
+    transition: .2s;
 }
 /* Rodapé - fim */
