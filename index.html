@@ -254,51 +254,66 @@
     <section id="form">
         <h2>Fale Conosco</h2>
         <form action="">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
-            <label for="celular">Celular</label>
-            <input type="tel" name="celular" id="celular">
-            <label for="dia">Dia da Semana</label>
-            <p>dia</p>
-            <select name="dia" id="dia">
-                <option value="" disabled selected>Escolha um dia</option>
-                <option value="" disabled>-- Manhã --</option>
-                <option value="">Segunda</option>
-                <option value="">Terça</option>
-                <option value="">Quarta</option>
-                <option value="">Quinta</option>
-                <option value="">Sexta</option>
-                <option value="">Sábado</option>
-            </select>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="celular">Celular</label>
+                <input type="tel" name="celular" id="celular">
+            </div>
+            
+            <div>
+                <label for="dia">Dia da Semana</label>
+                <select name="dia" id="dia">
+                    <option value="" disabled selected>Escolha um dia</option>
+                    <option value="">Segunda</option>
+                    <option value="">Terça</option>
+                    <option value="">Quarta</option>
+                    <option value="">Quinta</option>
+                    <option value="">Sexta</option>
+                    <option value="">Sábado</option>
+                </select>
+            </div>
             <br>
-            <label for="horario"></label>
-            <select name="horario" id="horario">
-                <option value="" disabled selected>Escolha um horário</option>
-                <optgroup>
-                    <option value="" disabled>-- Manhã --</option>
-                    <option value="">08:00h</option>
-                    <option value="">09:00h</option>
-                    <option value="">10:00h</option>
-                    <option value="">11:00h</option>
-                </optgroup>
-                <optgroup>
-                    <option value="" disabled>-- Tarde --</option>
-                    <option value="">12:00h</option>
-                    <option value="">13:00h</option>
-                    <option value="">14:00h</option>
-                    <option value="">15:00h</option>
-                    <option value="">16:00h</option>
-                    <option value="">17:00h</option>
-                    <option value="">18:00h</option>
-                    <option value="">19:00h</option>
-                    <option value="">20:00h</option>
-                    <option value="">21:00h</option>
-                    <option value="">22:00h</option>
-                </optgroup>
-            </select>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            <div>
+                <label for="hora">Horário</label>
+                <select name="hora" id="hora">
+                    <option value="" disabled selected>Escolha um horário</option>
+                    <optgroup>
+                        <option value="" disabled>-- Manhã --</option>
+                        <option value="">08:00h</option>
+                        <option value="">09:00h</option>
+                        <option value="">10:00h</option>
+                        <option value="">11:00h</option>
+                    </optgroup>
+                    <optgroup>
+                        <option value="" disabled>-- Tarde --</option>
+                        <option value="">12:00h</option>
+                        <option value="">13:00h</option>
+                        <option value="">14:00h</option>
+                        <option value="">15:00h</option>
+                        <option value="">16:00h</option>
+                        <option value="">17:00h</option>
+                        <option value="">18:00h</option>
+                        <option value="">19:00h</option>
+                        <option value="">20:00h</option>
+                        <option value="">21:00h</option>
+                        <option value="">22:00h</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="msg">Informações Adicionais</label>
+                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            </div>
         </form>
     </section>
     <footer>
