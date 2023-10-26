@@ -117,12 +117,20 @@
         gap: 10px;
     }
 
+    #form #btn input {
+        width: auto;
+    }
+
     .ocultar {
         display: none;
     }
 
     section #mapaSite nav {
         width: 100%;
+    }
+
+    footer #dev p {
+        width: auto;
     }
 
 }
