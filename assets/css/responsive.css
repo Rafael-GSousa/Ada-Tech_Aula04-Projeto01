@@ -19,7 +19,7 @@
     }
 
     header ul li {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         margin-right: 5px;
     }
 
@@ -118,7 +118,7 @@
     }
 
     #form #btn input {
-        width: auto;
+        width: 130px;
     }
 
     .ocultar {
