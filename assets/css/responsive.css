@@ -130,7 +130,7 @@
     }
 
     footer #dev p {
-        width: auto;
+        width: 100%;
     }
 
 }
