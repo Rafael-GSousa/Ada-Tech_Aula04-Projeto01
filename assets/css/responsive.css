@@ -129,8 +129,9 @@
         width: 100%;
     }
 
-    footer #dev p {
-        width: 100%;
+    footer #dev {
+        display: flex;
+        flex-direction: column;
     }
 
 }
