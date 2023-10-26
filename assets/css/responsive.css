@@ -1,0 +1,128 @@
+@media screen and (max-width: 865px) {
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    header img {
+        width: 200px;
+    }
+
+    header nav {
+        margin: auto;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header ul li {
+        font-size: 0.9rem;
+        margin-right: 5px;
+    }
+
+    #banner {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    main div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    main div #servicos, main div #produtos {
+        display: flex;
+        flex-direction: column;        
+        width: 100%;
+        align-items: center;
+    }
+
+    main div #servicos article, main div #produtos article {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    main figure {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+
+    }
+
+    main aside #missao {
+        display: none;
+    }
+
+    main aside {
+        display: flex;
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    main aside #info {
+        width: 100%;
+        text-align: center;        
+    }
+
+    #quemSomos article {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #tabelas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #tabelas section {
+        width: 100%;
+    }
+
+    #form {
+        width: 100%;
+        padding: 30px;
+    }
+
+    #form label {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    #form input, #form select {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #form .dados {
+        margin-bottom: 40px;
+    }
+
+    #form #btn {
+        display: flex;
+        gap: 10px;
+    }
+
+    .ocultar {
+        display: none;
+    }
+
+    section #mapaSite nav {
+        width: 100%;
+    }
+
+}
